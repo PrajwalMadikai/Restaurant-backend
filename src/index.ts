@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 dotenv.config()
 
 app.use(cors({
-  origin:process.env.FRONTEND_URL,
+  origin:'*',
   methods: ['GET', 'POST', 'DELETE','PUT']
 }))
 app.use(express.json({ limit: '10mb' }));  
